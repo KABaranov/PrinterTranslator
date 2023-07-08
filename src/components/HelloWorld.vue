@@ -4,9 +4,33 @@
     <div 
     class="h-screen d-flex flex-column justify-space-around" :style="{backgroundColor: color1}" style="width: 13%;">
       <div>
-        <button class="w-100 my-3" style="padding-top: 10%; padding-bottom: 10%;" :style="{backgroundColor: color2, color: color4}">Kuka</button>
-        <button class="w-100 my-3" style="padding-top: 10%; padding-bottom: 10%;" :style="{backgroundColor: color4, color: color2}">Fanuc</button>
-        <button class="w-100 my-3" style="padding-top: 10%; padding-bottom: 10%;" :style="{backgroundColor: color4, color: color2}">AT300</button>
+        <v-btn 
+          block rounded="0" 
+          class="w-100 my-8 text-h4" 
+          height="90px"
+          style="padding-top: 10%; padding-bottom: 10%;" 
+          :style="{backgroundColor: color2, color: color4, boxShadow: shadowActive}"
+        >
+          Kuka
+        </v-btn>
+        <v-btn 
+          block rounded="0" 
+          class="w-100 my-8 text-h4" 
+          height="90px"
+          style="padding-top: 10%; padding-bottom: 10%" 
+          :style="{backgroundColor: color4, color: color2, boxShadow: shadowDisabled}"
+        >
+          Kuka
+        </v-btn>
+        <v-btn 
+          block rounded="0" 
+          class="w-100 my-8 text-h4" 
+          height="90px"
+          style="padding-top: 10%; padding-bottom: 10%" 
+          :style="{backgroundColor: color4, color: color2, boxShadow: shadowDisabled}"
+        >
+          Kuka
+        </v-btn>
       </div>
       <div class="w-100 d-flex justify-center">
         <img class="w-50" src="/xweld.png" alt="XWeld">
@@ -53,6 +77,15 @@
           <v-text-field class="px-4" clearable label="Forging Layer Height (mm)"></v-text-field>
         </v-col>
       </v-row>
+      <v-row align="center" justify="space-evenly" class="ma=4 pa-4">
+        <!-- Progress + Start -->
+        <v-btn 
+        :style="{backgroundColor: color4, color: color2}"
+        width="100px" height="100px" rounded="circle" size="x-large"
+        >
+        Start
+      </v-btn>
+      </v-row>
     </div>
   </div>
 </template>
@@ -65,6 +98,8 @@
         color3: '#F58549',
         color4: '#772F1A',
         color5: '#585123',
+        shadowActive: "-4px 4px 4px 0px rgba(0, 0, 0, 0.25)",
+        shadowDisabled: 'none',
       }
     },
   }
