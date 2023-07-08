@@ -82,9 +82,17 @@
       </v-row>
       <v-row align="center" justify="space-evenly" class="ma=4 pa-4">
         <!-- Progress + Start -->
+        <div class="w-50">
+          <v-progress-linear
+          v-model="value"
+          :buffer-value="bufferValue"
+          :color="color5"
+        ></v-progress-linear>
+        </div>
         <v-btn 
         :style="{backgroundColor: color4, color: color2}"
         width="100px" height="100px" rounded="circle" size="x-large"
+        @click="checkProgressLine"
         >
         Start
       </v-btn>
@@ -104,6 +112,7 @@
         shadowActive: "-4px 4px 4px 0px rgba(0, 0, 0, 0.25)",
         shadowDisabled: 'none',
         oscillationFunction: ['None', 'Sin', 'Cos', 'Circle'],
+        value: 0,
       }
     },
     methods: {
@@ -128,6 +137,14 @@
         this.color4 = '#C7F9CC',
         this.color5 = '#80ED99'
       },
+      checkProgressLine(){
+        if (this.value < 100) {
+          this.value = this.value + 10
+        }
+        else {
+          this.value = 0
+        }
+      }
     }
   }
 </script>
