@@ -63,8 +63,8 @@
           <v-select
             clearable
             class="px-4"
-            label="Select"
-            :items="['Вариант 1', 'Вариант 2', 'Вариант 3']"
+            label="Oscillation Function"
+            :items="oscillationFunction"
           ></v-select>
           <v-text-field class="px-4" clearable label="X Amplitude (mm)"></v-text-field>
           <v-text-field class="px-4" clearable label="Y Amplitude (mm)"></v-text-field>
@@ -103,6 +103,7 @@
         color5: '#585123',
         shadowActive: "-4px 4px 4px 0px rgba(0, 0, 0, 0.25)",
         shadowDisabled: 'none',
+        oscillationFunction: ['Вариант 1', 'Вариант 2', 'Вариант 3'],
       }
     },
     methods: {
