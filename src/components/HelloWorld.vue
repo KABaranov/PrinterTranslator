@@ -103,7 +103,7 @@
         color5: '#585123',
         shadowActive: "-4px 4px 4px 0px rgba(0, 0, 0, 0.25)",
         shadowDisabled: 'none',
-        oscillationFunction: ['Вариант 1', 'Вариант 2', 'Вариант 3'],
+        oscillationFunction: ['None', 'Sin', 'Cos', 'Circle'],
       }
     },
     methods: {
