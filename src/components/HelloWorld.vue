@@ -108,8 +108,8 @@
                 <div class="text-subtitle-1 font-weight-bold w-100 text-center" style="cursor: default;">Additional Parameters</div>
                 <v-textarea class="ma-2" disabled label="Result Files"></v-textarea>
               </div>
-              <div class="kuka-menu h-25 mt-4 d-flex align-center justify-center rounded text-h5 font-weight-bold" 
-              :style="{backgroundColor: kukaColor1}" style="cursor: pointer;">Start</div>
+              <v-btn class="kuka-menu h-25 mt-4 d-flex align-center justify-center rounded text-h5 font-weight-bold" 
+              :style="{backgroundColor: kukaColor1}" style="cursor: pointer;">Start</v-btn>
             </div>
           </div>
         </div>
@@ -202,8 +202,8 @@
                 <div class="text-subtitle-1 font-weight-bold w-100 text-center" style="cursor: default;">Additional Parameters</div>
                 <v-textarea class="ma-2" disabled label="Result Files"></v-textarea>
               </div>
-              <div class="fanuc-menu h-25 mt-4 d-flex align-center justify-center rounded text-h5 font-weight-bold" 
-              :style="{backgroundColor: fanucColor1}" style="cursor: pointer;">Start</div>
+              <v-btn class="fanuc-menu h-25 mt-4 d-flex align-center justify-center rounded text-h5 font-weight-bold" 
+              :style="{backgroundColor: fanucColor1}" style="cursor: pointer;">Start</v-btn>
             </div>
           </div>
         </div>
