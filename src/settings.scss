@@ -1,6 +1,6 @@
 @forward 'vuetify/settings' with (
   $input-control-height: 22px,
-  $input-density: ('default': 0, 'comfortable': -2, 'compact': -4, 'mini': -14),
+  $input-density: ('default': 0, 'comfortable': -14, 'compact': -4, 'mini': -14),
   $input-chips-margin-bottom: ('default': 0, 'comfortable': 1, 'compact': 2, 'mini': 1),
   $input-chips-margin-top: 3px,
   $input-details-min-height: 10px,

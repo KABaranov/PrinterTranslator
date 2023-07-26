@@ -1,11 +1,16 @@
+<script setup lang="ts">
+  import XWeld from "./components/XWeld.vue";
+</script>
+
 <template>
-  <v-app>
+    <v-app>
     <v-main>
-      <HelloWorld />
+      <XWeld />
     </v-main>
   </v-app>
 </template>
 
-<script setup lang="ts">
-  import HelloWorld from '@/components/HelloWorld.vue'
-</script>
+<style lang="scss">
+  @use './settings';
+</style>
+

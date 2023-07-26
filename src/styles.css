@@ -1,0 +1,94 @@
+.kuka{
+  background: #1e1e1e;
+  cursor: pointer;
+}
+.fanuc{
+  background: #1e1e1e;
+  cursor: pointer;
+}
+.at300{
+  background: #1e1e1e;
+  cursor: pointer;
+}
+@keyframes kukaHover{
+  0%{
+    filter: none
+  }
+  100%{
+    filter: drop-shadow(0px 0px 50px rgba(245, 124, 0, 0.75));
+  }
+}
+@keyframes fanucHover{
+  0%{
+    filter: none
+  }
+  100%{
+    filter: drop-shadow(0px 0px 50px rgba(245, 220, 0, 0.75));
+  }
+}
+@keyframes atHover{
+  0%{
+    filter: none
+  }
+  100%{
+    filter: drop-shadow(0px 0px 50px rgba(0, 54, 245, 0.75));
+  }
+}
+@keyframes kukaMenuHover{
+  0%{
+    filter: none
+  }
+  100%{
+    filter: drop-shadow(0px 0px 25px rgba(245, 124, 0, 0.75));
+  }
+}
+@keyframes fanucMenuHover{
+  0%{
+    filter: none
+  }
+  100%{
+    filter: drop-shadow(0px 0px 25px rgba(245, 220, 0, 0.75));
+  }
+}
+@keyframes atMenuHover{
+  0%{
+    filter: none
+  }
+  100%{
+    filter: drop-shadow(0px 0px 25px rgba(0, 54, 245, 0.75));
+  }
+}
+.kuka:hover{
+  animation: kukaHover .2s forwards;
+}
+.fanuc:hover{
+  animation: fanucHover .2s forwards;
+}
+.at300:hover{
+  animation: atHover .2s forwards;
+}
+.kuka-menu:hover{
+  animation: kukaMenuHover .2s forwards;
+}
+.fanuc-menu:hover{
+  animation: fanucMenuHover .2s forwards;
+}
+.v-text-field input {
+  font-size: .8rem;
+}
+.v-input .v-label {
+  font-size: .8rem;
+}
+.v-select__selection-text{
+  font-size: .8rem;
+}
+.v-label.v-field-label.v-field-label--floating {
+  font-size: .65rem;
+}
+.v-text-field{
+  padding: 0;
+}
+.v-input__details .v-messages{
+  height: 0 !important;
+  min-height: 0 !important;
+}
